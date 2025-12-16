@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>破壊クリッカーゲーム</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="gameTitle">💥 破壊クリッカー</h1>
+        <div class="level-info">
+            <span id="levelDisplay">レベル 1</span>
+        </div>
+        <div class="score" id="score">0 ポイント</div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar">0%</div>
+        </div>
+
+        <div class="button-info">
+            <div id="buttonLevel">ボタンLv.1</div>
+            <div style="font-size: 0.9em; margin-top: 5px;">破壊報酬: <span id="breakReward">10</span> ポイント</div>
+        </div>
+
+        <div class="durability-bar">
+            <div class="durability-fill" id="durabilityBar">100 / 100</div>
+        </div>
+
+        <div class="click-button-container">
+            <button class="click-button" id="clickButton">🪨</button>
+            <div class="crack-overlay"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat" id="breakPowerStat">破壊力: 1</div>
+            <div class="stat" id="totalBreaksStat">破壊回数: 0</div>
+        </div>
+
+        <div class="shop">
+            <h2>🛒 ショップ</h2>
+            <div class="items" id="itemsContainer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
